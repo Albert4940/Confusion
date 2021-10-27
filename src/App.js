@@ -7,11 +7,11 @@ import Main from './components/MainComponent';
 
 import { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom';
+const store = ConfigureStore();
 class App extends Component {
   
   
-  render(){
-    const store = ConfigureStore();
+render(){    
   return (
     <Provider store={store}>
       <BrowserRouter>
